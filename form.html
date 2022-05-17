@@ -1,0 +1,170 @@
+<!DOCTYPE html>  
+<html>  
+<head>  
+<meta name="viewport" content="width=device-width, initial-scale=1">  
+<style>  
+body{  
+  font-family: Calibri, Helvetica, sans-serif;  
+  background-color: Red;  
+}  
+.container {  
+    padding: 50px;  
+  background-color: lightblue;  
+}  
+  
+input[type=text], input[type=password], textarea {  
+  width: 100%;  
+  padding: 15px;  
+  margin: 5px 0 22px 0;  
+  display: inline-block;  
+  border: none;  
+  background: #f1f1f1;  
+}  
+input[type=text]:focus, input[type=password]:focus {  
+  background-color: orange;  
+  outline: none;  
+}  
+ div {  
+            padding: 10px 0;  
+         }  
+hr {  
+  border: 1px solid #f1f1f1;  
+  margin-bottom: 25px;  
+}  
+.registerbtn {  
+  background-color: #4CAF50;  
+  color: white;  
+  padding: 16px 20px;  
+  margin: 8px 0;  
+  border: none;  
+  cursor: pointer;  
+  width: 100%;  
+  opacity: 0.9;  
+}  
+.registerbtn:hover {  
+  opacity: 1;  
+}  
+</style>  
+</head>  
+<body>  
+<form>  
+  <div class="container">  
+  <center>  <h1> Patient Registeration Form</h1> </center>  
+  <hr>  
+  <label> Firstname </label>   
+<input type="text" name="firstname" placeholder= "Firstname" size="15" required />   
+<label> Lastname: </label>    
+<input type="text" name="lastname" placeholder="Lastname" size="15"required />   
+<div> 
+Address :  
+<textarea cols="80" rows="5" placeholder="Current Address" value="address" required>  
+</textarea>  
+ 
+<label>   
+State :  
+</label>   
+
+  
+<select>
+<option value="Select a state">Select a state</option>  
+<option value="Kerala">Kerala</option>  
+<option value="Tamilnadu">Tamilnadu</option>  
+<option value="Maharashtra">Maharashtra</option>   
+</select> 
+ 
+<label>   
+City :  
+</label>   
+
+  
+<select>
+<option value="Choose City">Choose city</option>  
+<option value="Palakkad">Palakkad</option>  
+<option value="Thiruvananthapuram">Thiruvananthapuram</option>  
+<option value="Kozhikode">Kozhikode</option>  
+<option value="Kochi">Kochi</option>  
+<option value="Kollam">Kollam</option>  
+<option value="Thrissur">Thrissur</option>  
+<option value="Kannur">Kannur</option>  
+<option value="Alappuzha">Alappuzha</option>  
+<option value="Kottayam">Kottayam</option>  
+<option value="Manjeri">Manjeri</option>  
+<option value="Chennai">Chennai</option>  
+<option value="Coimbatore">Coimbatore</option>  
+<option value="Madurai">Madurai</option>  
+<option value="Tiruchirappalli">Tiruchirappalli</option>  
+<option value="Salem">Salem</option>  
+<option value="Tirunelveli">Tirunelveli</option>  
+<option value="Tiruppur">Tiruppur</option>  
+<option value="Vellore">Vellore</option>  
+<option value="Erode">Erode</option>  
+<option value="Thoothukkudi">Thoothukkudi</option>  
+<option value="Mumbai">Mumbai</option>  
+<option value="Pune">Pune</option>  
+<option value="Nagpur">Nagpur</option>  
+<option value="Thane">Thane</option>  
+<option value="Nashik">Nashik</option>  
+<option value="Kalyan-Dombivli">Kalyan-Dombivli</option>  
+<option value="Vasai-Virar City MC">Vasai-Virar City MC</option>  
+<option value="Aurangabad">Aurangabad</option>  
+<option value="Navi Mumbai">Navi Mumbai</option>  
+<option value="Solapur">Solapur</option>  
+</select>  
+
+</div> 
+<div>
+<label> Pin Code </label>   
+<input type="text" name="Pin Code" placeholder= "Pin Code" size="8" required />
+</div> 
+<label>   
+Phone :  
+</label>  
+<input type="text" name="phone" placeholder="phone no." size="10"/ required>   
+<form action="/action_page.php">
+<label for="Date Of Birth">Date Of Birth:</label>
+<input type="date" id="Date Of Birth" name="Date Of Birth"> 
+</form>
+
+<div>
+<label> Name Of The Parent </label>   
+<input type="text" name="Name Of The Parent" placeholder= "Name Of The Parent" size="15" required />   
+<label> Parent Phone Number: </label>    
+<input type="text" name="Parent Phone Number" placeholder="Parent Phone Number" size="15"required /> 
+</div> 
+<div>  
+<label>   
+Sex :  
+</label><br>  
+<input type="radio" value="Male" name="gender" checked > Male   
+<input type="radio" value="Female" name="gender"> Female     
+  
+</div>  
+<div>  
+<label>   
+Maritial Status :  
+</label><br>  
+<input type="radio" value="Married" name="Maritial Status" checked > Married   
+<input type="radio" value="Single" name="Maritial Status"> Single     
+  
+</div>  
+ <label for="email"><b>Email</b></label>  
+ <input type="text" placeholder="Enter Email" name="email" required>  
+<label> Emergency Contact </label>   
+<input type="text" name="Emergency Contact" placeholder= "Emergency Contact" size="15" required />   
+
+<div>  
+<label>   
+Insurance Avilable :  
+</label><br>  
+<input type="radio" value="Yes" name="Insurance Avilable" checked > Yes  
+<input type="radio" value="No" name="Insurance Avilable"> No    
+  
+</div>  
+
+
+  
+ 
+    <button type="submit" class="registerbtn">Register</button>    
+</form>  
+</body>  
+</html>  
